@@ -1,0 +1,471 @@
+CSV File,Columns containing all necessary fragments for ID,Columns containing fragments where atleast one fragment must be observed for confirmation,Run DDA,Run AIF (Ignore this column if you don't have AIF data),By Class only - total C:DB,Polarity,Adduct,Notes
+MSDIAL_CAR_[M]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M]+,MSDIAL_CAR
+PEG_Pos.csv,3;4,,TRUE,TRUE,FALSE,Pos,[M+?]+,polyethylene glycol: Beta (multiple adducts)
+CL_3Na_min2H.csv,3;4;5;6,,TRUE,TRUE,FALSE,Pos,[M+3Na-2H]+,Cardiolipin: further fragments known
+LPC_neg_C2H3O2.csv,9,,TRUE,TRUE,FALSE,Neg,[M+C2H3O2]-,Lysophosphatidylcholine
+PC_neg_C2H3O2.csv,3,9;10,TRUE,TRUE,FALSE,Neg,[M+C2H3O2]-,Phosphatidylcholine
+PlasmanylLPC_neg_C2H3O2.csv,3,,TRUE,TRUE,FALSE,Neg,[M+C2H3O2]-,Plasmanyl lysophosphatidylcholine
+PlasmanylPC_neg_C2H3O2.csv,3;9,,TRUE,TRUE,FALSE,Neg,[M+C2H3O2]-,Plasmanyl phosphatidylcholine
+PlasmenylLPC_neg_C2H3O2.csv,3,,TRUE,TRUE,FALSE,Neg,[M+C2H3O2]-,Plasmenyl lysophosphatidylcholine
+PlasmenylPC_neg_C2H3O2.csv,3;9,,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,Plasmenyl phosphatidylcholine
+DGDG_neg_C2H3O2.csv,9,11;12,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,Digalactosyldiacylglycerol
+ether_OxPC_neg_C2H3O2_MSDIAL.csv,3;6,,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,ether-oxidized phosphatidylcholine
+OxPC_neg_C2H3O2.csv,3;7,4;5;6,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,oxidized phosphatidylcholine
+SM_neg_C2H3O2.csv,3;4;5,,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,Sphingomyelin
+Cer_ADS_neg_C2H3O2.csv,3;14,,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,Backbone: Dihydrosphingosine Fatty acid: a-hydroxy fatty acid
+Cer_AP_neg_C2H3O2.csv,3;5,,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,Backbone: Phytosphingosine Fatty acid: a-hydroxy fatty acid
+Cer_AS_neg_C2H3O2.csv,3,7;15,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,Backbone: Sphingosine Fatty acid: a-hydroxy fatty acid
+Cer_BDS_neg_C2H3O2.csv,3;4,,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,Ceramide beta-hydroxy fatty acid-dihydrosphingosine
+Cer_BS_neg_C2H3O2.csv,3;5,,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,Ceramide beta-hydroxy fatty acid-sphingosine
+Cer_EODS_neg_C2H3O2.csv,3;6,5;7;8,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,Backbone: Dihydrosphingosine Fatty acid: esterified w-hydroxy fatty acid
+Cer_EOS_neg_C2H3O2.csv,3;6,5;7;8,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,Backbone: Sphingosine Fatty acid: esterified w-hydroxy fatty acid
+Cer_NDS_neg_C2H3O2.csv,3;8,,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,Backbone: Dihydrosphingosine Fatty acid: non-hydroxy fatty acid
+Cer_NP_neg_C2H3O2.csv,3;6;7,,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,Backbone: Phytosphingosine Fatty acid: Fatty acid: non-hydroxy fatty acid
+Cer_NS_neg_C2H3O2.csv,3;8,,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,"Ceramide (Nonhydroxyacyl sphingosine) (duplicate, MS-DIAL version)"
+GlcCer_AP_neg_C2H3O2.csv,3;5,,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,glucosyl-ceramide Backbone: Phytosphingosine Fatty acid: a-hydroxy fatty acid
+GlcCer_NDS_neg_C2H3O2.csv,3;4;6,,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,glucosyl-ceramide Backbone: Dihydrosphingosine Fatty acid: non-hydroxy fatty acid
+GlcCer_NS_neg_C2H3O2.csv,3;4,5;6;7,TRUE,FALSE,FALSE,Neg,[M+C2H3O2]-,Glucosyl-Nonhydroxyacyl sphingosine
+DGDG_neg_C2H3O2_Class.csv,5,,TRUE,FALSE,TRUE,Neg,[M+C2H3O2]-,Digalactosyldiacylglycerol
+MSDIAL_AHexBRS_[M+CH3COO]-.csv,3;4,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_AHexBRS
+MSDIAL_AHexCAS_[M+CH3COO]-.csv,3;4,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_AHexCAS
+MSDIAL_AHexCer_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_AHexCer
+MSDIAL_AHexCS_[M+CH3COO]-.csv,3;4,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_AHexCS
+MSDIAL_AHexSIS_[M+CH3COO]-.csv,3;4,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_AHexSIS
+MSDIAL_AHexSTS_[M+CH3COO]-.csv,3;4,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_AHexSTS
+MSDIAL_ASM_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_ASM
+MSDIAL_BileAcid_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_BileAcid
+MSDIAL_Cer_ADS_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_Cer_ADS
+MSDIAL_Cer_AP_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_Cer_AP
+MSDIAL_Cer_AS_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_Cer_AS
+MSDIAL_Cer_BDS_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_Cer_BDS
+MSDIAL_Cer_BS_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_Cer_BS
+MSDIAL_Cer_EBDS_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_Cer_EBDS
+MSDIAL_Cer_EODS_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_Cer_EODS
+MSDIAL_Cer_EOS_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_Cer_EOS
+MSDIAL_Cer_NDS_[M+CH3COO]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_Cer_NDS
+MSDIAL_Cer_NP_[M+CH3COO]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_Cer_NP
+MSDIAL_Cer_NS_[M+CH3COO]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_Cer_NS
+MSDIAL_DGDG_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_DGDG
+MSDIAL_EtherDGDG_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_EtherDGDG
+MSDIAL_EtherLPC_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_EtherLPC
+MSDIAL_EtherMGDG_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_EtherMGDG
+MSDIAL_EtherOxPC_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_EtherOxPC
+MSDIAL_EtherPC_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_EtherPC
+MSDIAL_Hex2Cer_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_Hex2Cer
+MSDIAL_Hex3Cer_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_Hex3Cer
+MSDIAL_HexCer_AP_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_HexCer_AP
+MSDIAL_HexCer_EOS_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_HexCer_EOS
+MSDIAL_HexCer_HDS_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_HexCer_HDS
+MSDIAL_HexCer_HS_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_HexCer_HS
+MSDIAL_HexCer_NDS_[M+CH3COO]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_HexCer_NDS
+MSDIAL_HexCer_NS_[M+CH3COO]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_HexCer_NS
+MSDIAL_LPC_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_LPC
+MSDIAL_MGDG_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_MGDG
+MSDIAL_OxPC_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_OxPC
+MSDIAL_PC_[M+CH3COO]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_PC
+MSDIAL_SHex_[M+CH3COO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_SHex
+MSDIAL_SM_[M+CH3COO]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_SM
+MSDIAL_Vitamin_E_[M+CH3COO]-.csv,3;4,,TRUE,FALSE,TRUE,Neg,[M+CH3COO]-,MSDIAL_Vitamin_E
+AcCa_H.csv,2;6,,TRUE,TRUE,FALSE,Pos,[M+H]+,Acylcarnitine
+CerP_H.csv,2;3,4;5;6;7,TRUE,FALSE,FALSE,Pos,[M+H]+,Ceramide-1-phosphate
+DGTS_H.csv,3;6;7,,TRUE,FALSE,FALSE,Pos,[M+H]+,Diacylglyceryltrimethylhomo-Ser
+LDGTS_H.csv,4,,TRUE,TRUE,FALSE,Pos,[M+H]+,Lysodiacylglyceryltrimethylhomo-Ser
+LPC_H.csv,5,,TRUE,TRUE,FALSE,Pos,[M+H]+,Lysophosphatidylcholine
+LPE_H.csv,3,,TRUE,TRUE,FALSE,Pos,[M+H]+,Lysophosphatidylethanolamine
+MGDG_H.csv,3;5,,FALSE,FALSE,FALSE,Pos,[M+H]+,Beta: Monogalactosyldiacylglycerol; 
+OxLPC_H.csv,5,,TRUE,TRUE,FALSE,Pos,[M+H]+,Oxidized lysophosphatidylcholine
+OxLPE_H.csv,3,,TRUE,TRUE,FALSE,Pos,[M+H]+,Oxidized lysophosphatidylethanolamine
+OxPC_H.csv,8,4;5,FALSE,FALSE,FALSE,Pos,[M+H]+,Oxidized phosphatidylcholine
+OxPC_H_Class.csv,4,,FALSE,FALSE,TRUE,Pos,[M+H]+,Oxidized phosphatidylcholine
+OxPE_H.csv,3,4;5,FALSE,FALSE,FALSE,Pos,[M+H]+,Oxidized phosphatidylethanolamine
+OxPE_H_Class.csv,3,,FALSE,FALSE,TRUE,Pos,[M+H]+,Oxidized phosphatidylethanolamine
+PA_H.csv,3,4;5,TRUE,TRUE,FALSE,Pos,[M+H]+,Phosphatidic acid
+PA_H_Class.csv,3,,TRUE,FALSE,TRUE,Pos,[M+H]+,Phosphatidic acid
+PC_H.csv,2;12,8;9,TRUE,TRUE,FALSE,Pos,[M+H]+,Phosphatidylcholine
+PC_H_Class.csv,4,,FALSE,FALSE,TRUE,Pos,[M+H]+,Phosphatidylcholine
+PC_H_LibAllTails.csv,2;10,8;9,FALSE,FALSE,FALSE,Pos,[M+H]+,Phosphatidylcholine: Every possible chain (large library)
+PE_H.csv,3,4;5,TRUE,TRUE,FALSE,Pos,[M+H]+,Phosphatidylethanolamine
+PE_H_Class.csv,3,,TRUE,TRUE,TRUE,Pos,[M+H]+,Phosphatidylethanolamine
+PG_H.csv,4;5,,TRUE,TRUE,FALSE,Pos,[M+H]+,Phosphatidylglycerol
+PlasmanylLPC_H.csv,2;6,,TRUE,TRUE,FALSE,Pos,[M+H]+,Plasmanyl lysophosphatidylcholine
+PlasmanylLPE_H.csv,3,,TRUE,TRUE,FALSE,Pos,[M+H]+,Plasmanyl lysophosphatidylethanolamine
+PlasmanylPC_H.csv,2;11,4;6,TRUE,TRUE,FALSE,Pos,[M+H]+,Plasmanyl phosphatidylcholine
+PlasmanylPC_H_Class.csv,4,,FALSE,FALSE,TRUE,Pos,[M+H]+,Plasmanyl phosphatidylcholine
+PlasmanylPE_H.csv,3;4,,TRUE,TRUE,FALSE,Pos,[M+H]+,Plasmanyl phosphatidylethanolamine
+PlasmanylPE_H_Class.csv,3,,TRUE,FALSE,TRUE,Pos,[M+H]+,Plasmanyl phosphatidylethanolamine
+PlasmanylPS_H.csv,3;4,,TRUE,TRUE,FALSE,Pos,[M+H]+,Plasmanyl phosphatidylserine
+PlasmanylPS_H_Class.csv,3,,TRUE,FALSE,TRUE,Pos,[M+H]+,Plasmanyl phosphatidylserine
+PlasmenylLPC_H.csv,3,,TRUE,TRUE,FALSE,Pos,[M+H]+,Plasmenyl lysophosphatidylcholine
+PlasmenylLPE_H.csv,3,,TRUE,TRUE,FALSE,Pos,[M+H]+,Plasmenyl lysophosphatidylethanolamine
+PlasmenylPC_H.csv,2;11,4;6,TRUE,TRUE,FALSE,Pos,[M+H]+,Plasmenyl phosphatidylcholine
+PlasmenylPC_H_Class.csv,4,,FALSE,FALSE,TRUE,Pos,[M+H]+,Plasmenyl phosphatidylcholine
+PlasmenylPE_H.csv,3;6,,TRUE,TRUE,FALSE,Pos,[M+H]+,Plasmenyl phosphatidylethanolamine
+PlasmenylPE_H_Class.csv,3,,TRUE,FALSE,TRUE,Pos,[M+H]+,Plasmenyl phosphatidylethanolamine
+PlasmenylPS_H.csv,3;4,,TRUE,TRUE,FALSE,Pos,[M+H]+,Plasmenyl phosphatidylserine
+PlasmenylPS_H_Class.csv,3,,TRUE,FALSE,TRUE,Pos,[M+H]+,Plasmenyl phosphatidylserine
+PS_H.csv,3,4;5,TRUE,TRUE,FALSE,Pos,[M+H]+,Phosphatidylserine
+PS_H_Class.csv,3,,TRUE,FALSE,TRUE,Pos,[M+H]+,Phosphatidylserine
+SM_H.csv,2;6;8,,TRUE,TRUE,FALSE,Pos,[M+H]+,Sphingomyelin
+SM_H_Class.csv,6,,FALSE,FALSE,TRUE,Pos,[M+H]+,Sphingomyelin
+So_H.csv,4;5,,TRUE,TRUE,FALSE,Pos,[M+H]+,Sphingosine
+Sulf_H.csv,3;10,,TRUE,TRUE,FALSE,Pos,[M+H]+,Sulfatide
+Cer_H.csv,3;6,,FALSE,FALSE,FALSE,Pos,[M+H]+,Ceramide
+Cer_NDS_H.csv,6,5;8,TRUE,TRUE,FALSE,Pos,[M+H]+,Backbone: Dihydrosphingosine Fatty acid: non-hydroxy fatty acid
+Cer_NS_H.csv,6,5;8,TRUE,TRUE,FALSE,Pos,[M+H]+,"Ceramide (Nonhydroxyacyl sphingosine) (duplicate, MS-DIAL version)"
+GlcCer_NDS_H.csv,7,6;9,TRUE,TRUE,FALSE,Pos,[M+H]+,glucosyl-ceramide Backbone: Dihydrosphingosine Fatty acid: non-hydroxy fatty acid
+GlcCer_NS_H.csv,7,6;9,TRUE,TRUE,FALSE,Pos,[M+H]+,Glucosyl-Nonhydroxyacyl sphingosine
+DGTS_H_Class.csv,2;3,,TRUE,FALSE,TRUE,Pos,[M+H]+,Diacylglyceryltrimethylhomo-Ser
+SHexCer_H.csv,4;10,,FALSE,FALSE,FALSE,Pos,[M+H]+,Sulfatide
+MSDIAL_AHexCer_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_AHexCer
+MSDIAL_ASM_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_ASM
+MSDIAL_Cer_AP_[M+H]+.csv,3;4;5,,FALSE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_Cer_AP
+MSDIAL_Cer_EOS_[M+H]+.csv,3;4;5,,FALSE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_Cer_EOS
+MSDIAL_Cer_NDS_[M+H]+.csv,3;4;5,,FALSE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_Cer_NDS
+MSDIAL_Cer_NS_[M+H]+.csv,3;4;5,,FALSE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_Cer_NS
+MSDIAL_CerP_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_CerP
+MSDIAL_CoQ_[M+H]+.csv,3;4,,FALSE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_CoQ
+MSDIAL_DGCC_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_DGCC
+MSDIAL_DGTS_[M+H]+.csv,3;4;5,,FALSE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_DGTS
+MSDIAL_DHSph_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_DHSph
+MSDIAL_EtherLPC_[M+H]+.csv,3;4;5,,FALSE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_EtherLPC
+MSDIAL_EtherLPE_[M+H]+.csv,3;4;5,,FALSE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_EtherLPE
+MSDIAL_EtherPC_[M+H]+.csv,3;4;5,,FALSE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_EtherPC
+MSDIAL_EtherPE_[M+H]+.csv,3;4;5,,FALSE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_EtherPE
+MSDIAL_Hex2Cer_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_Hex2Cer
+MSDIAL_Hex3Cer_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_Hex3Cer
+MSDIAL_HexCer_AP_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_HexCer_AP
+MSDIAL_HexCer_EOS_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_HexCer_EOS
+MSDIAL_HexCer_HDS_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_HexCer_HDS
+MSDIAL_HexCer_HS_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_HexCer_HS
+MSDIAL_HexCer_NDS_[M+H]+.csv,3;4;5,,FALSE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_HexCer_NDS
+MSDIAL_HexCer_NS_[M+H]+.csv,3;4;5,,FALSE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_HexCer_NS
+MSDIAL_LDGCC_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_LDGCC
+MSDIAL_LDGTS_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_LDGTS
+MSDIAL_LPC_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_LPC
+MSDIAL_LPE_[M+H]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_LPE
+MSDIAL_NAE_[M+H]+.csv,3,,FALSE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_NAE
+MSDIAL_NAGly_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_NAGly
+MSDIAL_NAOrn_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_NAOrn
+MSDIAL_PC_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_PC
+MSDIAL_PE_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_PE
+MSDIAL_PhytoSph_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_PhytoSph
+MSDIAL_PI_Cer_[M+H]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_PI_Cer
+MSDIAL_PS_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_PS
+MSDIAL_SHexCer_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_SHexCer
+MSDIAL_SL_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_SL
+MSDIAL_SM_[M+H]+.csv,3;4;5,,FALSE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_SM
+MSDIAL_Sph_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_Sph
+MSDIAL_VAE_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_VAE
+MSDIAL_Vitamin_D_[M+H]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+H]+,MSDIAL_Vitamin_D
+DGDG_neg_HCO2.csv,3;4,,TRUE,FALSE,FALSE,Neg,[M+HCO2]-,Digalactosyldiacylglycerol
+LPC_neg_HCO2.csv,3;9,,TRUE,FALSE,FALSE,Neg,[M+HCO2]-,Lysophosphatidylcholine
+MGDG_neg_HCO2.csv,3;4,,TRUE,FALSE,FALSE,Neg,[M+HCO2]-,Monogalactosyldiacylglycerol
+OxLPC_neg_CHO2.csv,3;9,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Oxidized lysophosphatidylcholine
+OxPC_neg_CHO2.csv,10;11,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Oxidized phosphatidylcholine
+PC_neg_CHO2.csv,10;11,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Phosphatidylcholine
+PlasmanylLPC_neg_CHO2.csv,3,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Plasmanyl lysophosphatidylcholine
+PlasmanylPC_neg_CHO2.csv,3;9,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Plasmanyl phosphatidylcholine
+PlasmenylLPC_neg_CHO2.csv,3,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Plasmenyl lysophosphatidylcholine
+PlasmenylPC_neg_CHO2.csv,3;9,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Plasmenyl phosphatidylcholine
+SM_neg_HCO2.csv,3;4;5,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Sphingomyelin
+SM_neg_HCO2_Class.csv,3;4,,TRUE,FALSE,TRUE,Neg,[M+HCO2]-,Sphingomyelin
+ether_OxPC_neg_HCO2_MSDIAL.csv,2;5,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,ether-oxidized phosphatidylcholine
+OxPC_neg_HCO2_MSDIAL.csv,3;7,4;5;6,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,oxidized phosphatidylcholine
+Cer_neg_HCO2.csv,3;5,,FALSE,FALSE,FALSE,Neg,[M+HCO2]-,Ceramide
+Cer_ADS_neg_HCO2.csv,3;14,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Backbone: Dihydrosphingosine Fatty acid: a-hydroxy fatty acid
+Cer_AP_neg_HCO2.csv,3;5,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Backbone: Phytosphingosine Fatty acid: a-hydroxy fatty acid
+Cer_AS_neg_HCO2.csv,3,7;15,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Backbone: Sphingosine Fatty acid: a-hydroxy fatty acid
+Cer_BDS_neg_HCO2.csv,3;4,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Ceramide beta-hydroxy fatty acid-dihydrosphingosine
+Cer_BS_neg_HCO2.csv,3;5,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Ceramide beta-hydroxy fatty acid-sphingosine
+Cer_EODS_neg_HCO2.csv,3;6,5;7;8,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Backbone: Dihydrosphingosine Fatty acid: esterified w-hydroxy fatty acid
+Cer_EOS_neg_HCO2.csv,3;6,5;7;8,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Backbone: Sphingosine Fatty acid: esterified w-hydroxy fatty acid
+Cer_NDS_neg_HCO2.csv,3;8,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Backbone: Dihydrosphingosine Fatty acid: non-hydroxy fatty acid
+Cer_NP_neg_HCO2.csv,3;6;7,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Backbone: Phytosphingosine Fatty acid: Fatty acid: non-hydroxy fatty acid
+Cer_NS_neg_HCO2.csv,3;8,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,"Ceramide (Nonhydroxyacyl sphingosine) (duplicate, MS-DIAL version)"
+GlcCer_AP_neg_HCO2.csv,3;5,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,glucosyl-ceramide Backbone: Phytosphingosine Fatty acid: a-hydroxy fatty acid
+GlcCer_NDS_neg_HCO2.csv,3;4;6,,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,glucosyl-ceramide Backbone: Dihydrosphingosine Fatty acid: non-hydroxy fatty acid
+GlcCer_NS_neg_HCO2.csv,3;4,5;6;7,TRUE,TRUE,FALSE,Neg,[M+HCO2]-,Glucosyl-Nonhydroxyacyl sphingosine
+DGDG_neg_HCO2_Class.csv,5,,TRUE,FALSE,TRUE,Neg,[M+HCO2]-,Digalactosyldiacylglycerol
+MSDIAL_AHexBRS_[M+HCOO]-.csv,3;4,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_AHexBRS
+MSDIAL_AHexCAS_[M+HCOO]-.csv,3;4,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_AHexCAS
+MSDIAL_AHexCer_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_AHexCer
+MSDIAL_AHexCS_[M+HCOO]-.csv,3;4,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_AHexCS
+MSDIAL_AHexSIS_[M+HCOO]-.csv,3;4,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_AHexSIS
+MSDIAL_AHexSTS_[M+HCOO]-.csv,3;4,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_AHexSTS
+MSDIAL_ASM_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_ASM
+MSDIAL_Cer_ADS_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_Cer_ADS
+MSDIAL_Cer_AP_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_Cer_AP
+MSDIAL_Cer_AS_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_Cer_AS
+MSDIAL_Cer_BDS_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_Cer_BDS
+MSDIAL_Cer_BS_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_Cer_BS
+MSDIAL_Cer_EBDS_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_Cer_EBDS
+MSDIAL_Cer_EODS_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_Cer_EODS
+MSDIAL_Cer_EOS_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_Cer_EOS
+MSDIAL_Cer_NDS_[M+HCOO]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_Cer_NDS
+MSDIAL_Cer_NP_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_Cer_NP
+MSDIAL_Cer_NS_[M+HCOO]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_Cer_NS
+MSDIAL_DGDG_[M+HCOO]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_DGDG
+MSDIAL_EtherDGDG_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_EtherDGDG
+MSDIAL_EtherLPC_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_EtherLPC
+MSDIAL_EtherMGDG_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_EtherMGDG
+MSDIAL_EtherOxPC_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_EtherOxPC
+MSDIAL_EtherPC_[M+HCOO]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_EtherPC
+MSDIAL_Hex2Cer_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_Hex2Cer
+MSDIAL_Hex3Cer_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_Hex3Cer
+MSDIAL_HexCer_AP_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_HexCer_AP
+MSDIAL_HexCer_EOS_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_HexCer_EOS
+MSDIAL_HexCer_HDS_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_HexCer_HDS
+MSDIAL_HexCer_HS_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_HexCer_HS
+MSDIAL_HexCer_NDS_[M+HCOO]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_HexCer_NDS
+MSDIAL_HexCer_NS_[M+HCOO]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_HexCer_NS
+MSDIAL_LPC_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_LPC
+MSDIAL_MGDG_[M+HCOO]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_MGDG
+MSDIAL_OxPC_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_OxPC
+MSDIAL_PC_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_PC
+MSDIAL_SHex_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_SHex
+MSDIAL_SM_[M+HCOO]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_SM
+MSDIAL_Vitamin_E_[M+HCOO]-.csv,3;4,,TRUE,FALSE,TRUE,Neg,[M+HCOO]-,MSDIAL_Vitamin_E
+Cholesterol_HminH2O.csv,2,8;9,TRUE,TRUE,FALSE,Pos,[M+H-H2O]+,Cholesterol minus water
+LPC_Na.csv,4,,TRUE,TRUE,FALSE,Pos,[M+Na]+,Lysophosphatidylcholine
+LPE_Na.csv,3,,TRUE,TRUE,FALSE,Pos,[M+Na]+,Lysophosphatidylethanolamine
+MGDG_Na.csv,3;4,,TRUE,FALSE,FALSE,Pos,[M+Na]+,Monogalactosyldiacylglycerol
+OxLPC_Na.csv,7,,TRUE,TRUE,FALSE,Pos,[M+Na]+,Oxidized lysophosphatidylcholine
+OxLPE_Na.csv,3,,TRUE,TRUE,FALSE,Pos,[M+Na]+,Oxidized lysophosphatidylethanolamine
+OxPC_Na.csv,2,9;10,FALSE,FALSE,FALSE,Pos,[M+Na]+,Oxidized phosphatidylcholine
+OxPE_Na.csv,3,5;6,FALSE,FALSE,FALSE,Pos,[M+Na]+,Oxidized phosphatidylethanolamine
+PC_Na.csv,2;3;4;5;10,6;7,TRUE,TRUE,FALSE,Pos,[M+Na]+,Phosphatidylcholine
+PE_Na.csv,4,5;6,TRUE,TRUE,FALSE,Pos,[M+Na]+,Phosphatidylethanolamine
+PS_Na.csv,9,7;8,TRUE,TRUE,FALSE,Pos,[M+Na]+,Phosphatidylserine
+PS_Na_Class.csv,3,,TRUE,FALSE,TRUE,Pos,[M+Na]+,Phosphatidylserine
+TG_Na.csv,2;3;4;5,,TRUE,TRUE,FALSE,Pos,[M+Na]+,triacylglyceride or triacylglycerol: Will add significant time to analysis with minimal new information
+MSDIAL_CE_[M+Na]+.csv,3,,FALSE,FALSE,TRUE,Pos,[M+Na]+,MSDIAL_CE
+MSDIAL_DG_[M+Na]+.csv,3,,FALSE,FALSE,TRUE,Pos,[M+Na]+,MSDIAL_DG
+MSDIAL_EtherDGDG_[M+Na]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+Na]+,MSDIAL_EtherDGDG
+MSDIAL_EtherMGDG_[M+Na]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+Na]+,MSDIAL_EtherMGDG
+MSDIAL_EtherTG_[M+Na]+.csv,3;4;5,,FALSE,FALSE,TRUE,Pos,[M+Na]+,MSDIAL_EtherTG
+MSDIAL_LPC_[M+Na]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+Na]+,MSDIAL_LPC
+MSDIAL_PC_[M+Na]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+Na]+,MSDIAL_PC
+MSDIAL_PE_[M+Na]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+Na]+,MSDIAL_PE
+MSDIAL_PI_[M+Na]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+Na]+,MSDIAL_PI
+MSDIAL_PS_[M+Na]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+Na]+,MSDIAL_PS
+MSDIAL_SM_[M+Na]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+Na]+,MSDIAL_SM
+MSDIAL_TG_[M+Na]+.csv,3;4;5,,FALSE,FALSE,TRUE,Pos,[M+Na]+,MSDIAL_TG
+MSDIAL_VAE_[M+Na]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+Na]+,MSDIAL_VAE
+CE_NH4.csv,3;9,,TRUE,TRUE,FALSE,Pos,[M+NH4]+,Cholesterol Ester
+CL_NH4.csv,3;4,,TRUE,TRUE,FALSE,Pos,[M+NH4]+,Cardiolipin
+CoQ_NH4.csv,3,,TRUE,TRUE,FALSE,Pos,[M+NH4]+,Coenzyme Q
+DG_NH4.csv,3;4,,TRUE,TRUE,FALSE,Pos,[M+NH4]+,Diacylglyceride or Diacylglycerol
+DGDG_NH4.csv,3,5;6,TRUE,FALSE,FALSE,Pos,[M+NH4]+,Digalactosyldiacylglycerol
+DGDG_NH4_Class.csv,3,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,Digalactosyldiacylglycerol
+GlcADG_NH4.csv,5;6,,TRUE,FALSE,FALSE,Pos,[M+NH4]+,Glucuronosyldiacylglycerol 
+lanosteryl_NH4.csv,4,,TRUE,TRUE,FALSE,Pos,[M+NH4]+,lanosteryl
+MG_NH4.csv,3,,TRUE,TRUE,FALSE,Pos,[M+NH4]+,Monoacylglycerol
+MGDG_NH4.csv,3,5;6,TRUE,FALSE,FALSE,Pos,[M+NH4]+,Monogalactosyldiacylglycerol
+MGDG_NH4_Class.csv,3,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,Monogalactosyldiacylglycerol
+OxCL_NH4.csv,3;4,,TRUE,TRUE,FALSE,Pos,[M+NH4]+,Beta: Oxidized Cardiolipin; add FA(OOH)-H2O fragmentation?
+PG_NH4.csv,4,9;10,TRUE,TRUE,FALSE,Pos,[M+NH4]+,Phosphatidylglycerol
+PG_NH4_Class.csv,4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,Phosphatidylglycerol
+PI_NH4_Class.csv,3,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,Phosphatidylinositol
+PlasmanylTG_NH4.csv,3;4,,FALSE,FALSE,FALSE,Pos,[M+NH4]+,Plasmanyl triacylglycerol
+PlasmanylTG_reduced_NH4.csv,3;4,,TRUE,TRUE,FALSE,Pos,[M+NH4]+,Plasmanyl triacylglycerol: Reduced to only NL of RCOOH to speed up LipidMatch
+PlasmenylTG_NH4.csv,3;4,,FALSE,FALSE,FALSE,Pos,[M+NH4]+,Plasmenyl triacylglycerol
+PlasmenylTG_red_NH4.csv,3;4,,TRUE,TRUE,FALSE,Pos,[M+NH4]+,Plasmenyl triacylglycerol: Reduced to only NL of RCOOH to speed up LipidMatch
+TG_NH4.csv,3;4;5,,FALSE,FALSE,FALSE,Pos,[M+NH4]+,triacylglyceride or triacylglycerol
+TG_reduced_NH4.csv,3;4;5,,TRUE,TRUE,FALSE,Pos,[M+NH4]+,triacylglyceride or triacylglycerol: Reduced fragment search to only NL of RCOOH to speed up LipidMatch
+zymosteryl_NH4.csv,4,,TRUE,TRUE,FALSE,Pos,[M+NH4]+,zymosteryl
+AcylGlcADG_NH4.csv,4;7,5;6,TRUE,TRUE,FALSE,Pos,[M+NH4]+,Acylglucuronosyldiacylglycerol
+BMP_NH4.csv,4;5,,TRUE,TRUE,FALSE,Pos,[M+NH4]+,Bismonoacylglycerophosphate
+HBMP_NH4.csv,3,4;6,TRUE,TRUE,FALSE,Pos,[M+NH4]+,Hemibismonoacylglycerophosphate
+SQDG_NH4.csv,7;8,,TRUE,TRUE,FALSE,Pos,[M+NH4]+,Sulfoquinovosyl diacylglycerol 
+Cholesterol_NH4.csv,3,,TRUE,TRUE,FALSE,Pos,[M+NH4]+,Cholesterol
+GM3_NH4.csv,4;10,12;13,TRUE,TRUE,FALSE,Pos,[M+NH4]+,Ganglioside GM3
+PEtOH_NH4.csv,3,8;9,TRUE,TRUE,FALSE,Pos,[M+NH4]+,Phosphatidylethanol
+PMeOH_NH4.csv,3,8;9,TRUE,TRUE,FALSE,Pos,[M+NH4]+,Phosphatidylmethanol
+GM3_NH4_Class.csv,4;10,,TRUE,TRUE,TRUE,Pos,[M+NH4]+,Ganglioside GM3
+PEtOH_NH4_Class.csv,3,,TRUE,TRUE,TRUE,Pos,[M+NH4]+,Phosphatidylethanol
+PMeOH_NH4_Class.csv,3,,TRUE,TRUE,TRUE,Pos,[M+NH4]+,Phosphatidylmethanol
+MSDIAL_ADGGA_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_ADGGA
+MSDIAL_AHexBRS_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_AHexBRS
+MSDIAL_AHexCAS_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_AHexCAS
+MSDIAL_AHexCS_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_AHexCS
+MSDIAL_AHexSIS_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_AHexSIS
+MSDIAL_AHexSTS_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_AHexSTS
+MSDIAL_BASulfate_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_BASulfate
+MSDIAL_BMP_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_BMP
+MSDIAL_BRSE_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_BRSE
+MSDIAL_CASE_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_CASE
+MSDIAL_CE_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_CE
+MSDIAL_CL_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_CL
+MSDIAL_DCAE_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_DCAE
+MSDIAL_DG_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_DG
+MSDIAL_DGDG_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_DGDG
+MSDIAL_DGGA_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_DGGA
+MSDIAL_EtherDG_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_EtherDG
+MSDIAL_EtherDGDG_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_EtherDGDG
+MSDIAL_EtherMGDG_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_EtherMGDG
+MSDIAL_EtherTG_[M+NH4]+.csv,3;4;5,,FALSE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_EtherTG
+MSDIAL_GDCAE_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_GDCAE
+MSDIAL_GLCAE_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_GLCAE
+MSDIAL_GM3_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_GM3
+MSDIAL_HBMP_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_HBMP
+MSDIAL_MG_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_MG
+MSDIAL_MGDG_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_MGDG
+MSDIAL_NAGly_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_NAGly
+MSDIAL_NAGlySer_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_NAGlySer
+MSDIAL_PEtOH_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_PEtOH
+MSDIAL_PG_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_PG
+MSDIAL_PI_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_PI
+MSDIAL_PMeOH_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_PMeOH
+MSDIAL_SHex_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_SHex
+MSDIAL_SHexCer_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_SHexCer
+MSDIAL_SISE_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_SISE
+MSDIAL_SL_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_SL
+MSDIAL_SQDG_[M+NH4]+.csv,3;4;5,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_SQDG
+MSDIAL_SSulfate_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_SSulfate
+MSDIAL_STSE_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_STSE
+MSDIAL_TDCAE_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_TDCAE
+MSDIAL_TG_[M+NH4]+.csv,3;4;5,,FALSE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_TG
+MSDIAL_TLCAE_[M+NH4]+.csv,3;4,,TRUE,FALSE,TRUE,Pos,[M+NH4]+,MSDIAL_TLCAE
+MGDG_NH4minCO.csv,2,7;8,TRUE,FALSE,FALSE,Pos,[M+NH4-CO]+,Monogalactosyldiacylglycerol
+CL_neg_min2H.csv,11;12;13;14,,TRUE,FALSE,FALSE,Neg,[M-2H]-,Cardiolipin
+OxCL_neg_min2H.csv,11;12;13;14,,TRUE,TRUE,FALSE,Neg,[M-2H]-,"Oxidized Cardiolipin; FA(OOH)-H2O fragmentation, and FA(OOH)2-2H2O fragmentation, are the fragments when looking at single acyl chains. 13;14;15;16 may also be good fragments for confirmation. Note that ketones, epoxy, and (OH)(OOH) and other oxidized combinations are not contained in the library"
+Ac2PIM1_neg_minH.csv,2,3;4,TRUE,FALSE,FALSE,Neg,[M-H]-,Diacylated phosphatidylinositol monomannoside
+Ac2PIM2_neg_minH.csv,2,3;4,TRUE,FALSE,FALSE,Neg,[M-H]-,Diacylated phosphatidylinositol dimannoside
+Ac3PIM2_neg_minH.csv,3;4;5,,TRUE,FALSE,FALSE,Neg,[M-H]-,Triacylated phosphatidylinositol dimannoside
+Ac4PIM2_neg_minH.csv,3;4;5;6,,TRUE,FALSE,FALSE,Neg,[M-H]-,Tetraacylated phosphatidylinositol dimannoside
+BA_Glycine_neg_minH.csv,2,4;5,TRUE,TRUE,FALSE,Neg,[M-H]-,Bial Acid Glycine Conjugate
+BA_neg_minH.csv,2;4,,TRUE,TRUE,FALSE,Neg,[M-H]-,Beta: Bial Acid
+BA_Taurine_neg_minH.csv,,4;5,TRUE,TRUE,FALSE,Neg,[M-H]-,Bial Acid Taurine Conjugate
+CerP_neg_minH.csv,3,,TRUE,FALSE,FALSE,Neg,[M-H]-,Ceramide-1-phosphate
+CL_neg_minH.csv,10;11;17;18,,TRUE,TRUE,FALSE,Neg,[M-H]-,Cardiolipin: 13;14;15;16 may also be good fragments for confirmation
+DMPE_neg_minH.csv,3;4,,TRUE,FALSE,FALSE,Neg,[M-H]-,Dimethyl Phosphatidylethanolamine
+Ganglioside_neg_minH_Class.csv,2;6,,TRUE,TRUE,TRUE,Neg,[M-H]-,Ganglioside or glycan ceramides
+GlcADG_neg_minH.csv,9;10,,TRUE,FALSE,FALSE,Neg,[M-H]-,Glucuronosyldiacylglycerol 
+LipidA_PP_2_neg_minH.csv,5;6,,TRUE,TRUE,FALSE,Neg,[M-H]-,Diphosphorylated hexaacyl Lipid A
+LipidA_PP_neg_minH.csv,2;5;6,7;8,TRUE,TRUE,FALSE,Neg,[M-H]-,Diphosphorylated hexaacyl Lipid A
+LPC_SN1_H.csv,5;10,,TRUE,TRUE,FALSE,Neg,[M-H]-,Lysophosphatidylcholine
+LPE_neg_minH.csv,5,,TRUE,TRUE,FALSE,Neg,[M-H]-,Lysophosphatidylethanolamine
+LPI_neg_minH.csv,2;5,,TRUE,TRUE,FALSE,Neg,[M-H]-,Lysophosphatidylinositol
+MMPE_neg_minH.csv,3;4,,TRUE,FALSE,FALSE,Neg,[M-H]-,Monomethyl-Phosphatidylethanolamine
+OxCL_neg_minH.csv,9;10;11;12,,TRUE,TRUE,FALSE,Neg,[M-H]-,"Oxidized Cardiolipin; FA(OOH)-H2O fragmentation, and FA(OOH)2-2H2O fragmentation, are the fragments when looking at single acyl chains. 13;14;15;16 may also be good fragments for confirmation. Note that ketones, epoxy, and (OH)(OOH) and other oxidized combinations are not contained in the library"
+OxLPE_neg_minH.csv,2;5,,TRUE,TRUE,FALSE,Neg,[M-H]-,Oxidized lysophosphatidylethanolamine
+OxPE_neg_minH.csv,2;7;8,,TRUE,TRUE,FALSE,Neg,[M-H]-,Oxidized phosphatidylethanolamine
+PA_neg_minH.csv,8;9,,TRUE,TRUE,FALSE,Neg,[M-H]-,Phosphatidic acid
+PE_neg_minH.csv,7;8,,TRUE,TRUE,FALSE,Neg,[M-H]-,Phosphatidylethanolamine
+PG_neg_minH.csv,12;13,,TRUE,TRUE,FALSE,Neg,[M-H]-,Phosphatidylglycerol
+PI_neg_minH.csv,2;17,12;13,TRUE,TRUE,FALSE,Neg,[M-H]-,Phosphatidylinositol
+PlasmanylLPE_neg_minH.csv,2;6,,TRUE,TRUE,FALSE,Neg,[M-H]-,Plasmanyl lysophosphatidylethanolamine
+PlasmanylPE_neg_minH.csv,2;5,,TRUE,TRUE,FALSE,Neg,[M-H]-,Plasmanyl phosphatidylethanolamine
+PlasmanylPS_neg_minH.csv,6;7,,TRUE,TRUE,FALSE,Neg,[M-H]-,Plasmanyl phosphatidylserine
+PlasmenylLPE_neg_minH.csv,2;4,,TRUE,TRUE,FALSE,Neg,[M-H]-,Plasmenyl lysophosphatidylethanolamine
+PlasmenylPE_neg_minH.csv,3;5,,TRUE,TRUE,FALSE,Neg,[M-H]-,Plasmenyl phosphatidylethanolamine
+PlasmenylPS_neg_minH.csv,6,,TRUE,FALSE,FALSE,Neg,[M-H]-,Plasmenyl phosphatidylserine
+PS_neg_minH.csv,9;10,,TRUE,TRUE,FALSE,Neg,[M-H]-,Phosphatidylserine
+PS_neg_minH_Class.csv,3,,TRUE,FALSE,TRUE,Neg,[M-H]-,Phosphatidylserine
+SQDG_neg_minH.csv,2;5,3;4,TRUE,TRUE,FALSE,Neg,[M-H]-,Sulfoquinovosyldiacylglycerol
+Sulf_neg_minH.csv,2;7,4;5,TRUE,TRUE,FALSE,Neg,[M-H]-,Sulfatide
+Sulf_neg_minH_Class.csv,4,,TRUE,FALSE,TRUE,Neg,[M-H]-,Sulfatide
+AcylGlcADG_neg_minH.csv,2;3;4;5,,TRUE,TRUE,FALSE,Neg,[M-H]-,Acylglucuronosyldiacylglycerol
+ether_OxPE_neg_minH_MSDIAL.csv,2;4,,TRUE,TRUE,FALSE,Neg,[M-H]-,ether-oxidized phosphatidylethanolamine
+FAHFA_neg_minH.csv,3;5,,TRUE,TRUE,FALSE,Neg,[M-H]-,Fatty acid ester of hydroxyl fatty acid
+HBMP_neg_minH.csv,2;5;6;7,,TRUE,TRUE,FALSE,Neg,[M-H]-,Hemibismonoacylglycerophosphate
+LPA_neg_minH.csv,3,,TRUE,TRUE,FALSE,Neg,[M-H]-,lyso-phosphatidic acid
+LPS_neg_minH.csv,4,3;5,TRUE,TRUE,FALSE,Neg,[M-H]-,lyso-phosphatidylserine
+OxPE_neg_minH_MSDIAL.csv,6,3;4;5,TRUE,TRUE,FALSE,Neg,[M-H]-,oxidized phosphatidylethanolamine
+OxPG_neg_minH_MSDIAL.csv,6,3;4;5,TRUE,TRUE,FALSE,Neg,[M-H]-,oxidized phosphatidylglycerol
+OxPI_neg_minH_MSDIAL.csv,2;3;7,,TRUE,TRUE,FALSE,Neg,[M-H]-,oxidized phosphatidylinositol
+OxPS_neg_minH_MSDIAL.csv,3;7,,TRUE,TRUE,FALSE,Neg,[M-H]-,oxidized phosphatidylserine
+Cer_ADS_neg_minH.csv,2;13,,TRUE,TRUE,FALSE,Neg,[M-H]-,Backbone: Dihydrosphingosine Fatty acid: a-hydroxy fatty acid
+Cer_AP_neg_minH.csv,2;4,,TRUE,TRUE,FALSE,Neg,[M-H]-,Backbone: Phytosphingosine Fatty acid: a-hydroxy fatty acid
+Cer_AS_neg_minH.csv,2,6;14,TRUE,TRUE,FALSE,Neg,[M-H]-,Backbone: Sphingosine Fatty acid: a-hydroxy fatty acid
+Cer_BDS_neg_minH.csv,2;3,,TRUE,TRUE,FALSE,Neg,[M-H]-,Ceramide beta-hydroxy fatty acid-dihydrosphingosine
+Cer_BS_neg_minH.csv,2;4,,TRUE,TRUE,FALSE,Neg,[M-H]-,Ceramide beta-hydroxy fatty acid-sphingosine
+Cer_EODS_neg_minH.csv,2;5,4;6;7,TRUE,TRUE,FALSE,Neg,[M-H]-,Backbone: Dihydrosphingosine Fatty acid: esterified w-hydroxy fatty acid
+Cer_EOS_neg_minH.csv,3;6,5;7;8,TRUE,TRUE,FALSE,Neg,[M-H]-,Backbone: Sphingosine Fatty acid: esterified w-hydroxy fatty acid
+Cer_NDS_neg_minH.csv,2;7,,TRUE,TRUE,FALSE,Neg,[M-H]-,Backbone: Dihydrosphingosine Fatty acid: non-hydroxy fatty acid
+Cer_NP_neg_minH.csv,2;5;6,,TRUE,TRUE,FALSE,Neg,[M-H]-,Backbone: Phytosphingosine Fatty acid: Fatty acid: non-hydroxy fatty acid
+Cer_NS_neg_minH.csv,2;7,,TRUE,TRUE,FALSE,Neg,[M-H]-,"Ceramide (Nonhydroxyacyl sphingosine) (duplicate, MS-DIAL version)"
+GlcCer_AP_neg_minH.csv,2;4,,TRUE,TRUE,FALSE,Neg,[M-H]-,glucosyl-ceramide Backbone: Phytosphingosine Fatty acid: a-hydroxy fatty acid
+GlcCer_NDS_neg_minH.csv,2;3;5,,TRUE,TRUE,FALSE,Neg,[M-H]-,glucosyl-ceramide Backbone: Dihydrosphingosine Fatty acid: non-hydroxy fatty acid
+GlcCer_NS_neg_minH.csv,2;3,4;5;6,TRUE,TRUE,FALSE,Neg,[M-H]-,Glucosyl-Nonhydroxyacyl sphingosine
+SQDG_neg_minH_Class.csv,2;3,,TRUE,TRUE,TRUE,Neg,[M-H]-,Sulfoquinovosyldiacylglycerol
+GM3_neg_minH_Class.csv,2;4,,TRUE,TRUE,TRUE,Pos,[M-H]-,Ganglioside GM3
+SHexCer_neg_minH_Class.csv,2;3,,FALSE,FALSE,TRUE,Pos,[M-H]-,Sulfatide
+PMeOH_neg_minH.csv,5;6,,TRUE,TRUE,FALSE,Pos,[M-H]-,Phosphatidylmethanol
+PEtOH_neg_minH.csv,5;6,,TRUE,TRUE,FALSE,Pos,[M-H]-,Phosphatidylethanol
+DLCL_neg_BMPlike_minH.csv,5;6,,TRUE,TRUE,FALSE,Neg,[M-H]-,dilysocardiolipin
+DLCL_neg_PGlike_minH.csv,8;9,,TRUE,TRUE,FALSE,Neg,[M-H]-,dilysocardiolipin
+MLCL_neg_minH.csv,10;11,,TRUE,TRUE,FALSE,Neg,[M-H]-,monolysocardiolipin
+MSDIAL_Ac2PIM1_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_Ac2PIM1
+MSDIAL_Ac2PIM2_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_Ac2PIM2
+MSDIAL_Ac3PIM2_[M-H]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_Ac3PIM2
+MSDIAL_Ac4PIM2_[M-H]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_Ac4PIM2
+MSDIAL_ADGGA_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_ADGGA
+MSDIAL_BASulfate_[M-H]-.csv,3;4,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_BASulfate
+MSDIAL_BileAcid_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_BileAcid
+MSDIAL_Cer_ADS_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_Cer_ADS
+MSDIAL_Cer_AP_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_Cer_AP
+MSDIAL_Cer_AS_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_Cer_AS
+MSDIAL_Cer_BDS_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_Cer_BDS
+MSDIAL_Cer_BS_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_Cer_BS
+MSDIAL_Cer_EODS_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_Cer_EODS
+MSDIAL_Cer_EOS_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_Cer_EOS
+MSDIAL_Cer_NDS_[M-H]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_Cer_NDS
+MSDIAL_Cer_NP_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_Cer_NP
+MSDIAL_Cer_NS_[M-H]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_Cer_NS
+MSDIAL_CerP_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_CerP
+MSDIAL_CL_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_CL
+MSDIAL_DCAE_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_DCAE
+MSDIAL_DGGA_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_DGGA
+MSDIAL_DLCL_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_DLCL
+MSDIAL_EtherLPE_[M-H]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_EtherLPE
+MSDIAL_EtherLPG_[M-H]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_EtherLPG
+MSDIAL_EtherOxPE_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_EtherOxPE
+MSDIAL_EtherPE_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_EtherPE
+MSDIAL_EtherPG_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_EtherPG
+MSDIAL_EtherPI_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_EtherPI
+MSDIAL_EtherPS_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_EtherPS
+MSDIAL_EtherSMGDG_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_EtherSMGDG
+MSDIAL_FA_[M-H]-.csv,3,,FALSE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_FA
+MSDIAL_FAHFA_[M-H]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_FAHFA
+MSDIAL_GDCAE_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_GDCAE
+MSDIAL_GLCAE_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_GLCAE
+MSDIAL_GM3_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_GM3
+MSDIAL_HBMP_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_HBMP
+MSDIAL_HexCer_AP_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_HexCer_AP
+MSDIAL_HexCer_NDS_[M-H]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_HexCer_NDS
+MSDIAL_HexCer_NS_[M-H]-.csv,3;4;5,,FALSE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_HexCer_NS
+MSDIAL_LNAPE_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_LNAPE
+MSDIAL_LNAPS_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_LNAPS
+MSDIAL_LPA_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_LPA
+MSDIAL_LPE_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_LPE
+MSDIAL_LPG_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_LPG
+MSDIAL_LPI_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_LPI
+MSDIAL_LPS_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_LPS
+MSDIAL_MLCL_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_MLCL
+MSDIAL_NAGly_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_NAGly
+MSDIAL_NAGlySer_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_NAGlySer
+MSDIAL_OxPE_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_OxPE
+MSDIAL_OxPG_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_OxPG
+MSDIAL_OxPI_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_OxPI
+MSDIAL_OxPS_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_OxPS
+MSDIAL_PA_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_PA
+MSDIAL_PE_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_PE
+MSDIAL_PE_Cer_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_PE_Cer
+MSDIAL_PEtOH_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_PEtOH
+MSDIAL_PG_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_PG
+MSDIAL_PI_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_PI
+MSDIAL_PI_Cer_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_PI_Cer
+MSDIAL_PMeOH_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_PMeOH
+MSDIAL_PS_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_PS
+MSDIAL_SHexCer_[M-H]-.csv,3;4,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_SHexCer
+MSDIAL_SL_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_SL
+MSDIAL_SQDG_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_SQDG
+MSDIAL_SSulfate_[M-H]-.csv,3;4,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_SSulfate
+MSDIAL_TDCAE_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_TDCAE
+MSDIAL_TLCAE_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_TLCAE
+MSDIAL_Vitamin_E_[M-H]-.csv,3;4;5,,TRUE,FALSE,TRUE,Neg,[M-H]-,MSDIAL_Vitamin_E
+OxTG_Ke_NH4.csv,4;5;6,,TRUE,FALSE,FALSE,Pos,[M+NH4]+,Oxidized Triglyceride Ketone and Epoxy Long Chain
+OxTG_OH_NH4.csv,3;4;5;6,,TRUE,FALSE,FALSE,Pos,[M+NH4]+,Oxidized Triglyceride hydroxyl Long Chain
+OxTG_OOH_NH4.csv,5;6;7,,TRUE,FALSE,FALSE,Pos,[M+NH4]+,Oxidized Triglyceride hydroperoxyl Long Chain
+OxTG_Short_NH4.csv,3;4;5,,TRUE,FALSE,FALSE,Pos,[M+NH4]+,Oxidized Triglyceride aldehyde and carboxylic acid Short Chain

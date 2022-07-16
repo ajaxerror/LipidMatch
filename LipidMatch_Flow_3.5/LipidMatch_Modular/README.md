@@ -1,0 +1,9 @@
+# LipidMatch
+
+LipidMatch identifications are obtained by matching experimental fragment m/z values with simulated library m/z values using in-silico fragmentation libraries of over 500,000 lipid species across over 60 lipid types making it one of the most comprehensive open-source software. LipidMatch has been tested and validated using Q-Exactive orbitrap UHPLC-HRMS/MS data obtained from multiple sample types using targeted, data-dependent top-N (ddMS2-topN), and all ion fragmentation (AIF) approaches, as well as Agilent, Bruker and SCIEX Q-TOF UHPLC-HRMS/MS experiments. LipidMatch has also been applied for the annotation of direct infusion and imaging experiments. The software does not currently support Waters files. LipidMatch allows for facile integration of user generated libraries for unique applications. LipidMatch is modular, allowing it to fit in various workflows you may have in your lab. For example LipidMatch can be used with various peak picking software (for example MZmine, XCMS, MS-DIAL, and Compound Discoverer), and combine results from other lipidomics software. The link at the bottom of this page contains a manual, lipid libraries in .csv format, a batch file for lipidomics with MZmine processing, and LipidMatch software/scripts.
+
+For video tutorials visit: 
+https://www.youtube.com/playlist?list=PLZtU6nmcTb5mQWKYLJmULsfqNy9eCwy7K
+For software developers and to report bugs the GitHub page for LipidMatch is: https://github.com/GarrettLab-UF/LipidMatch
+
+Jeremy P. Koelmel, Nicholas M. Kroeger, Candice Z. Ulmer, John A. Bowden, Rainey E. Patterson, Jason A. Cochran, Christopher W. W. Beecher, Timothy J. Garrett, Richard A. Yost: LipidMatch: an automated workflow for rule-based lipid identification using untargeted high-resolution tandem mass spectrometry data. BMC Bioinformatics. (2017) 18:331. doi: 10.1186/s12859-017-1744-3
