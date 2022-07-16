@@ -1583,7 +1583,8 @@ remove_duplicates <- function(data, row_start, adduct_col, annotation_col, windo
   return(data)
 }
 
-genEIC <- function(path_to_EIC_gen_exe,
+genEIC <- function(path_to_EIC_gen_exe='../python_scripts/EICgen/dists/EICgen/EICgen.exe', # best practice might
+                   # be to define relative paths to executables at the top of the file, using the getwd() function
                    mz_column = 6,
                    rt_column = 7,
                    zoom_window = 30,
@@ -1593,6 +1594,12 @@ genEIC <- function(path_to_EIC_gen_exe,
                    target_dir = '' # directory where the mzXML files are located
 
 ) {
+
+  if (!dir.exists(dirname(path_to_EIC_gen_exe)) || !file.exists(path_to_EIC_gen_exe)){
+    # bail out of this function if the executable does not
+    # exists, thus it is not required to be compiled for this project
+    return()
+  }
 
   # format all arguments for the cmdline call
   mz_column_arg <- paste("--mz_column", mz_column, sep = " ")

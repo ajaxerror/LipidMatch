@@ -1,5 +1,5 @@
-#!/usr/bin/env python
-# -*- mode: python; coding: koi8-r; -*-
+#!/usr/bin/env python_scripts
+# -*- mode: python_scripts; coding: koi8-r; -*-
 
 import os
 import gtk, gobject
