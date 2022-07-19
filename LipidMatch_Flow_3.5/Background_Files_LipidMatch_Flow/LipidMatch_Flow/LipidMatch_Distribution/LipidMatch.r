@@ -1572,12 +1572,12 @@ genEIC <- function(path_to_EIC_gen_exe='../python_scripts/EICgen/dists/EICgen/EI
                    # be to define relative paths to executables at the top of the file, using the getwd() function
                    mz_column = 6,
                    rt_column = 7,
-                   zoom_window = 30,
-                   mz_tolerance = 0.005,
-                   feature_id_col = 12,
+                   zoom_window = RT_Window * 6,
+                   mz_tolerance = PrecursorMassAccuracy,
+                   feature_id_col = 11 + CommentColumn,
                    target_file = 'NegIDed_FIN.csv',
-                   target_dir = '' # directory where the mzXML files are located
-
+                   target_dir = paste(dirname(dirname(OutputDirectory)),"/Temp_Work/",sep="")
+                   # directory where the mzXML files are located
 ) {
 
   if (!dir.exists(dirname(path_to_EIC_gen_exe)) || !file.exists(path_to_EIC_gen_exe)){
