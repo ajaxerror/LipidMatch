@@ -78,7 +78,7 @@ parser.add_argument('--feature_id_col',
                     default=12)
 parser.add_argument('--zoom_window',
                     dest='zoom_window',
-                    type=int,
+                    type=float,
                     help='Zoom window used to indicate if value falls within the zoom window for a feature',
                     default=30)
 parser.add_argument('--target_file',
