@@ -1597,8 +1597,13 @@ genEIC <- function(path_to_EIC_gen_exe='../python_scripts/EICgen/dists/EICgen/EI
 
   # system call to eic generation executable (Note this call is blocking - the thread of execution
   # will halt here until the EIC csv file is generated
-  system(paste(path_to_EIC_gen_exe, rt_column_arg, zoom_window_arg, mz_tolerance_arg, mz_column_arg,
-               feature_id_col_arg, target_file_arg, target_dir_arg, sep = " "))
+  tryCatch(
+    system(paste(path_to_EIC_gen_exe, rt_column_arg, zoom_window_arg, mz_tolerance_arg, mz_column_arg,
+               feature_id_col_arg, target_file_arg, target_dir_arg, sep = " ")),
+    error = function(e) {
+      print(paste('EICgen Failed - error in the executable: ', e))
+    }
+  )
 }
 
 ####################################End functions##########################################
