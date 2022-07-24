@@ -11,6 +11,7 @@ import argparse
 import asyncio
 import csv
 import os
+import numpy as np
 import pandas
 import time
 
@@ -102,6 +103,9 @@ class EICgen:
     """
 
     def __init__(self, *args, **kwargs):
+        # silence complaints about valid chained assignment use
+        pandas.options.mode.chained_assignment = None
+
         self.max_threads = os.cpu_count() + 1
         self.mzXML_dir = kwargs['target_dir']
         self.target_file = kwargs['target_file']
@@ -143,7 +147,7 @@ class EICgen:
 
         tf = time.monotonic()
         print("time: ", tf - t0)
-        print('exiting...')
+        print('exiting EICgen...')
 
     @staticmethod
     def read_csv(csv_file):
@@ -196,10 +200,23 @@ class EICgen:
         out_rows = []
         for df, mzCSV_file in self.dfs:
             df = df[(df.mz < F.mz + self.tolerance) & (df.mz > F.mz - self.tolerance)]
-            filename = os.path.basename(mzCSV_file)
-            for _, row in df.iterrows():
-                zoom = str((F.RT + self.zoom_window > row['rt']) & (row['rt'] > F.RT - self.zoom_window)).upper()
-                out_rows.append([F.feature_id, row['rt'], row['intensity'], row['mz'], filename, zoom])
+            if not len(df):
+                continue
+
+            df['Feature'] = F.feature_id
+            df['File'] = os.path.basename(mzCSV_file)
+            rt = df['rt']
+
+            df.loc[
+                np.logical_and(
+                    rt.lt(F.RT + self.zoom_window),
+                    rt.gt(F.RT - self.zoom_window)
+                ), 'Zoom'
+            ] = 'TRUE'
+
+            df['Zoom'].fillna('FALSE', inplace=True)
+
+            out_rows.extend(df[['Feature', 'rt', 'intensity', 'mz', 'File', 'Zoom']].values)
         return out_rows
 
 
