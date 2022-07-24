@@ -8,6 +8,7 @@
 
 # imports
 import argparse
+import asyncio
 import csv
 import os
 import pandas
@@ -28,6 +29,7 @@ example command:
     --target_dir ../NTA-Tools/Test_Files
 
 Alternatively, the EICgen class can be imported into another python file and run from there:
+    import asyncio
     from EIC_gen import EICgen
     eic = EICgen(**dict(
         mz_column=6,
@@ -38,7 +40,7 @@ Alternatively, the EICgen class can be imported into another python file and run
         target_file='NegIDed_FIN.csv',
         target_dir='../NTA-Tools/Test_Files')
     )
-    eic.run()
+    asyncio.run(eic.run())
 
 
 NOTE: the outfile size will be in the GB domain
@@ -124,19 +126,23 @@ class EICgen:
         # may be explored in the future)
         self.dfs = self.read_mzCSV_files()
 
-    def run(self):
+    async def run(self):
         t0 = time.monotonic()
         out = os.path.join(self.mzXML_dir, date.today().strftime('%Y_%m_%d') + '_EIC_CSV.csv')
         with open(out, 'w') as EICfile:
             writer = csv.writer(EICfile)
             writer.writerow(['Feature', 'RT', 'Intensity', 'mz', 'File', 'Zoom'])
-            with ThreadPoolExecutor(max_workers=self.max_threads) as executor:
-                returned_rows = executor.map(self.get_feature_rows, self.features())
-                for i, feature_rows in enumerate(returned_rows):
-                    for rows in self.chunk(feature_rows, 1000):
-                        writer.writerows(rows)
-                tf = time.monotonic()
-                print("time: ", tf - t0)
+
+            async def write_feature_rows(f):
+                rows = await self.get_feature_rows(f)
+                writer.writerows(rows)
+
+            await asyncio.wait(
+                [write_feature_rows(f) for f in self.features()]
+            )
+
+        tf = time.monotonic()
+        print("time: ", tf - t0)
         print('exiting...')
 
     @staticmethod
@@ -181,7 +187,7 @@ class EICgen:
                 feature_id = row[self.feature_id_col]
                 yield Feature(mz, RT, feature_id)
 
-    def get_feature_rows(self, F: Feature):
+    async def get_feature_rows(self, F: Feature):
         """
         Takes a Feature object and returns a list of features rows:
         rows parsed from the mzXML files and filtered to the feature
@@ -200,4 +206,4 @@ class EICgen:
 if __name__ == '__main__':
     args = parser.parse_args()
     e = EICgen(**vars(args))
-    e.run()
+    asyncio.run(e.run())
