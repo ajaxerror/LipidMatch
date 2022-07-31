@@ -151,7 +151,9 @@ class EICgen:
 
     @staticmethod
     def read_csv(csv_file):
-        return pandas.read_csv(csv_file), csv_file
+        df = pandas.read_csv(csv_file)
+        df['File'] = os.path.basename(csv_file)
+        return df
 
     @staticmethod
     def chunk(rows, chunk_size):
@@ -166,7 +168,7 @@ class EICgen:
         mzCSV_files = []
         with ThreadPoolExecutor(max_workers=self.max_threads) as executor:
             for mzXML_file in self.mzXML_files:
-                out = '.'.join(mzXML_file.split('.')[:-1]) + '.csv'
+                out = mzXML_file.split('.')[0] + '.csv'
                 mzCSV_files.append(out)
                 if out in self.dir_files:
                     continue
@@ -179,7 +181,8 @@ class EICgen:
         """
         with ThreadPoolExecutor(max_workers=self.max_threads) as executor:
             mz_csv_dfs = executor.map(self.read_csv, self.mzCSV_files)
-        return list(mz_csv_dfs)
+        dfs = pandas.concat(mz_csv_dfs)
+        return dfs
 
     def features(self):
         with open(os.path.join(self.mzXML_dir, self.target_file), 'r') as NegIDfile:
@@ -197,27 +200,21 @@ class EICgen:
         rows parsed from the mzXML files and filtered to the feature
         parameters
         """
-        out_rows = []
-        for df, mzCSV_file in self.dfs:
-            df = df[(df.mz < F.mz + self.tolerance) & (df.mz > F.mz - self.tolerance)]
-            if not len(df):
-                continue
+        df = self.dfs[(self.dfs.mz < F.mz + self.tolerance) & (self.dfs.mz > F.mz - self.tolerance)]
+        if not len(df):
+            return []
 
-            df['Feature'] = F.feature_id
-            df['File'] = os.path.basename(mzCSV_file)
-            rt = df['rt']
+        df['Feature'] = F.feature_id
+        rt = df['rt']
+        df.loc[
+            np.logical_and(
+                rt.lt(F.RT + self.zoom_window),
+                rt.gt(F.RT - self.zoom_window)
+            ), 'Zoom'
+        ] = 'TRUE'
+        df['Zoom'].fillna('FALSE', inplace=True)
 
-            df.loc[
-                np.logical_and(
-                    rt.lt(F.RT + self.zoom_window),
-                    rt.gt(F.RT - self.zoom_window)
-                ), 'Zoom'
-            ] = 'TRUE'
-
-            df['Zoom'].fillna('FALSE', inplace=True)
-
-            out_rows.extend(df[['Feature', 'rt', 'intensity', 'mz', 'File', 'Zoom']].values)
-        return out_rows
+        return df[['Feature', 'rt', 'intensity', 'mz', 'File', 'Zoom']].values
 
 
 if __name__ == '__main__':
