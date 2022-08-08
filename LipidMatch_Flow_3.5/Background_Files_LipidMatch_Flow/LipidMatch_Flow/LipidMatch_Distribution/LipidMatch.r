@@ -1568,6 +1568,44 @@ remove_duplicates<-function(data,row_start,adduct_col,annotation_col,window,RT_c
   return(data)
 }
 
+genEIC <- function(path_to_EIC_gen_exe='../python_scripts/EICgen/dists/EICgen/EICgen.exe', # best practice might
+                   # be to define relative paths to executables at the top of the file, using the getwd() function
+                   mz_column = 6,
+                   rt_column = 7,
+                   zoom_window = RT_Window * 6,
+                   mz_tolerance = PrecursorMassAccuracy,
+                   feature_id_col = 11 + CommentColumn,
+                   target_file = 'NegIDed_FIN.csv',
+                   target_dir = paste(dirname(dirname(OutputDirectory)),"/Temp_Work/",sep="")
+                   # directory where the mzXML files are located
+) {
+
+  if (!dir.exists(dirname(path_to_EIC_gen_exe)) || !file.exists(path_to_EIC_gen_exe)){
+    # bail out of this function if the executable does not
+    # exists, thus it is not required to be compiled for this project
+    return()
+  }
+
+  # format all arguments for the cmdline call
+  mz_column_arg <- paste("--mz_column", mz_column, sep = " ")
+  rt_column_arg <- paste("--rt_column", rt_column, sep = " ")
+  zoom_window_arg <- paste("--zoom_window", zoom_window, sep = " ")
+  mz_tolerance_arg <- paste("--mz_tolerance", mz_tolerance, sep = " ")
+  feature_id_col_arg <- paste("--feature_id_col", feature_id_col, sep = " ")
+  target_file_arg <- paste("--target_file", target_file, sep = " ")
+  target_dir_arg <- paste("--target_dir", target_dir, sep = " ")
+
+  # system call to eic generation executable (Note this call is blocking - the thread of execution
+  # will halt here until the EIC csv file is generated
+  tryCatch(
+    system(paste(path_to_EIC_gen_exe, rt_column_arg, zoom_window_arg, mz_tolerance_arg, mz_column_arg,
+               feature_id_col_arg, target_file_arg, target_dir_arg, sep = " ")),
+    error = function(e) {
+      print(paste('EICgen Failed - error in the executable: ', e))
+    }
+  )
+}
+
 ####################################End functions##########################################
 
 
